@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #e17000, #f78e00, #ffb347);
+  color: #001f3f;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navbar {
+  font-family: poppins, sans-serif;
+  font-size: 22.5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 50px;
+}
+
+.nav-links {
+  font-family: "Inter", sans-serif;
+  list-style: none;
+  display: flex;
+  gap: 100px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #001f3f;
+}
+.nav-links a:hover {
+  color: white;
+  /* transform: scale(1.1); */
+  transition: all 0.3s ease;
+  transform: scaleZ(1.1);
+}
+
+.nav-links a.active {
+  text-decoration: underline;
+}
+/* 
+.logo {
+  max-width: 80px;
+  height: auto;
+  padding: 0;
+  margin: 0 40px;
+  cursor: pointer;
+} */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease;
+  margin-top: auto;
+}
+
+img {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .page-title {
+    font-size: 2rem;
+  }
+
+  .intro-section,
+  .team-card,
+  .mission-card,
+  .stats-section {
+    padding: 25px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .intro-title {
+    font-size: 1.5rem;
+  }
+
+  .intro-text {
+    font-size: 16px;
+  }
+}
